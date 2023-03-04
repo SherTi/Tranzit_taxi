@@ -1,0 +1,29 @@
+<div class="register-container">
+    <h1 class="page-title">Регистрация</h1>
+    <div class="page-content">
+        <div class="page-content-header">
+            <h2 class="register-content-heading">Введите паспортные данные</h2>
+            <span class="stage-txt">Шаг 3/3</span>
+        </div>
+        <div class="page-content-body">
+            <form method="POST" class="register-form" action="/register">
+                <div class="select-input-container">
+                    <select name="gender" class="register-input select-input">
+                        <option value="#"  selected>Паспорт Рф</option>
+                        <option value="male">Другое</option>
+                    </select>
+                </div>
+                <div class="input-half">
+                    <input type="text" class="register-input mar-20 width-200" placeholder="Серия" name="name">
+                    <input type="text" class="register-input" placeholder="Номер" name="surname">
+                </div>
+                <textarea  class="register-input no-resizeable mar-none"  placeholder="Выдан" name="phone"></textarea>
+                <div class="issued-block"><span class="issued-text">В точности как указано в паспорте</span></div>
+                <input type="text" class="register-input" placeholder="Код подразделения" name="email">
+                <div class="issue-date-container mar-b-50"></div>
+                <button class="form-submit-btn" type="submit">Регистрация</button>
+                <a href="/register" class="cancel-link">Назад</a>
+            </form>
+        </div>
+    </div>
+</div>

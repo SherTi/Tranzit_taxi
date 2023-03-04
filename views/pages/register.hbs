@@ -1,0 +1,33 @@
+<div class="register-container">
+    <h1 class="page-title">Регистрация</h1>
+    <div class="page-content">
+        <div class="page-content-header">
+            <h2 class="register-content-heading">Введите личные данные</h2>
+            <span class="stage-txt">Шаг 1/3</span>
+        </div>
+        <div class="page-content-body">
+            <form method="POST" class="register-form" action="/register">
+                <input type="text" class="register-input" placeholder="Введите имя" name="name">
+                <input type="text" class="register-input" placeholder="Введите фамилия" name="surname">
+                <div class="input-half">
+                    <div class="date-container"></div>
+                    <div class="select-input-container">
+                        <select name="gender" class="register-input select-input">
+                            <option value="#" disabled hidden selected>Выберите пол</option>
+                            <option value="male">Мужской</option>
+                            <option value="female">Женский</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="text" class="register-input" placeholder="Введите номер телефона" name="phone">
+                <input type="text" class="register-input" placeholder="Введите эл.адрес" name="email">
+                <input type="password" class="register-input" placeholder="Придумайте пароль" name="password">
+                <input type="password" class="register-input" placeholder="Подтвердите пароль пароль" name="entered_password">
+                <button class="form-submit-btn" type="submit">Продолжить</button>
+            </form>
+            <a href="/" class="cancel-link">Отменить</a>
+            <span class="copyright">Регистрируясь, вы соглашаетесь с <a href="/licences" class="copyright-link">лицензионным соглашением</a> и <a
+                    href="/policies" class="copyright-link">политикой конфиденциальности</a></span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,649 @@
+<section class="main-section">
+    <div class="hiw-container">
+        <div class="order-panel">
+            <div class="order-fs">
+                <div class="from-container order-containers">
+                    <label for="from" class="address-label">
+                        <span class="order-headings">Откуда</span>
+                        <input type="text" class="order-input" placeholder="Начальная точка" id="from">
+                    </label>
+                </div>
+                <div class="to-container order-containers">
+                    <label for="to" class="address-label">
+                        <span class="order-headings">куда</span>
+                        <input type="text" class="order-input" placeholder="Конечная точка" id="to">
+                    </label>
+                </div>
+            </div>
+            <div class="order-nd">
+                <div class="passengers-container order-containers">
+                    <span class="order-headings">Пассажиров</span>
+                    <span class="order-value">1</span>
+                </div>
+                <div class="order-date-container order-containers">
+                    <span class="order-headings">Дата</span>
+                    <div class="order-date-picker-container"></div>
+                </div>
+                <a href="/posts/get" class="submit-order-filter">Поиск</a>
+            </div>
+        </div>
+    </div>
+    <div class="posts-container">
+        <div class="posts-filter-container">
+            <div class="filter-card">
+                <h2 class="filter-head">Откуда</h2>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="checkbox" name="order_early" id="check_1" class="form-checkbox">
+                        <label for="check_1" class="option-label"><div class="checkbox-icon-container"><img src="/images/check.svg" alt="" class="option-icon"></div><span class="option-txt">Самые ранние поездки</span></label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="order_cheap" id="check_2" class="form-checkbox">
+                        <label for="check_2" class="option-label"><div class="checkbox-icon-container"><img src="/images/check.svg" alt="" class="option-icon"></div><span class="option-txt">Самые дешевые поездки</span></label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="order_short" id="check_3" class="form-checkbox">
+                        <label for="check_3" class="option-label"><div class="checkbox-icon-container"><img src="/images/check.svg" alt="" class="option-icon"></div><span class="option-txt">Самые короткие поездки</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-card">
+                <h2 class="filter-head">Удобства</h2>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="checkbox" name="order_early" id="check_4" class="form-checkbox">
+                        <label for="check_4" class="option-label"><div class="checkbox-icon-container"><img src="/images/check.svg" alt="" class="option-icon"></div><span class="option-txt">Мгновенное подтверждение (22)</span></label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="order_cheap" id="check_5" class="form-checkbox">
+                        <label for="check_5" class="option-label"><div class="checkbox-icon-container"><img src="/images/check.svg" alt="" class="option-icon"></div><span class="option-txt">Можно курить (7)</span></label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="order_short" id="check_6" class="form-checkbox">
+                        <label for="check_6" class="option-label"><div class="checkbox-icon-container"><img src="/images/check.svg" alt="" class="option-icon"></div><span class="option-txt">Можно с животным (11)</span></label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="order_early" id="check_7" class="form-checkbox">
+                        <label for="check_7" class="option-label"><div class="checkbox-icon-container"><img src="/images/check.svg" alt="" class="option-icon"></div><span class="option-txt">Бесплатный Wi-Fi (18)</span></label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="order_cheap" id="check_8" class="form-checkbox">
+                        <label for="check_8" class="option-label"><div class="checkbox-icon-container"><img src="/images/check.svg" alt="" class="option-icon"></div><span class="option-txt">Кондиционер (13)</span></label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="order_short" id="check_9" class="form-checkbox">
+                        <label for="check_9" class="option-label"><div class="checkbox-icon-container"><img src="/images/check.svg" alt="" class="option-icon"></div><span class="option-txt">Своя музыка (8)</span></label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" name="order_short" id="check_10" class="form-checkbox">
+                        <label for="check_10" class="option-label"><div class="checkbox-icon-container"><img src="/images/check.svg" alt="" class="option-icon"></div><span class="option-txt">С детским креслом (3)</span></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="posts-content">
+            <div class="posts-header">
+                <h3 class="day-txt">Сегодня</h3>
+                <span class="posts-count">Объявлений 28</span>
+                <select class="posts-type">
+                    <option value="all" selected>Всё</option>
+                    <option value="mobile">Автомобили</option>
+                    <option value="trucks">Грузовики</option>
+                    <option value="buses">Автобусы</option>
+                </select>
+            </div>
+            <div class="posts">
+                <div class="post-card">
+                    <div class="post-dates-container">
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">09:45</span>
+                            </div>
+                            <span class="post-address">Ставрополь, автовокзал</span>
+                        </div>
+                        <div class="post-info mid-post-date">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">15:10</span>
+                            </div>
+                            <span class="post-address">Ростов-на-Дону, автовокзал</span>
+                        </div>
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">5ч-10м</span>
+                            </div>
+                            <span class="post-time">Время в пути</span>
+                        </div>
+                    </div>
+                    <div class="post-details">
+                        <div class="user-info-container">
+                            <img src="/images/user-image.png" alt="" class="user-image">
+                            <div class="user-info">
+                                <span class="user-name">Евгений</span>
+                                <div class="user-rate">
+                                    <img src="/images/rate-star.svg" alt="" class="rate-star">
+                                    <span class="rate-txt">5,0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-details">
+                            <div class="car-details">
+                                <img src="/images/car-small.svg" alt="" class="car-icon">
+                                <span class="car-name">Lada Granta</span>
+                            </div>
+                            <div class="car-services">
+                                <img src="/images/smoke.svg" alt="" class="service-icons">
+                                <img src="/images/wifi.svg" alt="" class="service-icons">
+                                <img src="/images/condicioner.svg" alt="" class="service-icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <span class="price">1 393₽</span>
+                        <span class="place">1 место</span>
+                        <a href="/posts-result" class="select-link">Выбрать</a>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-dates-container">
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">09:45</span>
+                            </div>
+                            <span class="post-address">Ставрополь, автовокзал</span>
+                        </div>
+                        <div class="post-info mid-post-date">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">15:10</span>
+                            </div>
+                            <span class="post-address">Ростов-на-Дону, автовокзал</span>
+                        </div>
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">5ч-10м</span>
+                            </div>
+                            <span class="post-time">Время в пути</span>
+                        </div>
+                    </div>
+                    <div class="post-details">
+                        <div class="user-info-container">
+                            <img src="/images/user-image.png" alt="" class="user-image">
+                            <div class="user-info">
+                                <span class="user-name">Евгений</span>
+                                <div class="user-rate">
+                                    <img src="/images/rate-star.svg" alt="" class="rate-star">
+                                    <span class="rate-txt">5,0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-details">
+                            <div class="car-details">
+                                <img src="/images/car-small.svg" alt="" class="car-icon">
+                                <span class="car-name">Lada Granta</span>
+                            </div>
+                            <div class="car-services">
+                                <img src="/images/smoke.svg" alt="" class="service-icons">
+                                <img src="/images/wifi.svg" alt="" class="service-icons">
+                                <img src="/images/condicioner.svg" alt="" class="service-icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <span class="price">1 393₽</span>
+                        <span class="place">1 место</span>
+                        <a href="/posts-result" class="select-link">Выбрать</a>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-dates-container">
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">09:45</span>
+                            </div>
+                            <span class="post-address">Ставрополь, автовокзал</span>
+                        </div>
+                        <div class="post-info mid-post-date">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">15:10</span>
+                            </div>
+                            <span class="post-address">Ростов-на-Дону, автовокзал</span>
+                        </div>
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">5ч-10м</span>
+                            </div>
+                            <span class="post-time">Время в пути</span>
+                        </div>
+                    </div>
+                    <div class="post-details">
+                        <div class="user-info-container">
+                            <img src="/images/user-image.png" alt="" class="user-image">
+                            <div class="user-info">
+                                <span class="user-name">Евгений</span>
+                                <div class="user-rate">
+                                    <img src="/images/rate-star.svg" alt="" class="rate-star">
+                                    <span class="rate-txt">5,0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-details">
+                            <div class="car-details">
+                                <img src="/images/car-small.svg" alt="" class="car-icon">
+                                <span class="car-name">Lada Granta</span>
+                            </div>
+                            <div class="car-services">
+                                <img src="/images/smoke.svg" alt="" class="service-icons">
+                                <img src="/images/wifi.svg" alt="" class="service-icons">
+                                <img src="/images/condicioner.svg" alt="" class="service-icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <span class="price">1 393₽</span>
+                        <span class="place">1 место</span>
+                        <a href="/posts-result" class="select-link">Выбрать</a>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-dates-container">
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">09:45</span>
+                            </div>
+                            <span class="post-address">Ставрополь, автовокзал</span>
+                        </div>
+                        <div class="post-info mid-post-date">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">15:10</span>
+                            </div>
+                            <span class="post-address">Ростов-на-Дону, автовокзал</span>
+                        </div>
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">5ч-10м</span>
+                            </div>
+                            <span class="post-time">Время в пути</span>
+                        </div>
+                    </div>
+                    <div class="post-details">
+                        <div class="user-info-container">
+                            <img src="/images/user-image.png" alt="" class="user-image">
+                            <div class="user-info">
+                                <span class="user-name">Евгений</span>
+                                <div class="user-rate">
+                                    <img src="/images/rate-star.svg" alt="" class="rate-star">
+                                    <span class="rate-txt">5,0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-details">
+                            <div class="car-details">
+                                <img src="/images/car-small.svg" alt="" class="car-icon">
+                                <span class="car-name">Lada Granta</span>
+                            </div>
+                            <div class="car-services">
+                                <img src="/images/smoke.svg" alt="" class="service-icons">
+                                <img src="/images/wifi.svg" alt="" class="service-icons">
+                                <img src="/images/condicioner.svg" alt="" class="service-icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <span class="price">1 393₽</span>
+                        <span class="place">1 место</span>
+                        <a href="/posts-result" class="select-link">Выбрать</a>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-dates-container">
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">09:45</span>
+                            </div>
+                            <span class="post-address">Ставрополь, автовокзал</span>
+                        </div>
+                        <div class="post-info mid-post-date">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">15:10</span>
+                            </div>
+                            <span class="post-address">Ростов-на-Дону, автовокзал</span>
+                        </div>
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">5ч-10м</span>
+                            </div>
+                            <span class="post-time">Время в пути</span>
+                        </div>
+                    </div>
+                    <div class="post-details">
+                        <div class="user-info-container">
+                            <img src="/images/user-image.png" alt="" class="user-image">
+                            <div class="user-info">
+                                <span class="user-name">Евгений</span>
+                                <div class="user-rate">
+                                    <img src="/images/rate-star.svg" alt="" class="rate-star">
+                                    <span class="rate-txt">5,0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-details">
+                            <div class="car-details">
+                                <img src="/images/car-small.svg" alt="" class="car-icon">
+                                <span class="car-name">Lada Granta</span>
+                            </div>
+                            <div class="car-services">
+                                <img src="/images/smoke.svg" alt="" class="service-icons">
+                                <img src="/images/wifi.svg" alt="" class="service-icons">
+                                <img src="/images/condicioner.svg" alt="" class="service-icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <span class="price">1 393₽</span>
+                        <span class="place">1 место</span>
+                        <a href="/posts-result" class="select-link">Выбрать</a>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-dates-container">
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">09:45</span>
+                            </div>
+                            <span class="post-address">Ставрополь, автовокзал</span>
+                        </div>
+                        <div class="post-info mid-post-date">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">15:10</span>
+                            </div>
+                            <span class="post-address">Ростов-на-Дону, автовокзал</span>
+                        </div>
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">5ч-10м</span>
+                            </div>
+                            <span class="post-time">Время в пути</span>
+                        </div>
+                    </div>
+                    <div class="post-details">
+                        <div class="user-info-container">
+                            <img src="/images/user-image.png" alt="" class="user-image">
+                            <div class="user-info">
+                                <span class="user-name">Евгений</span>
+                                <div class="user-rate">
+                                    <img src="/images/rate-star.svg" alt="" class="rate-star">
+                                    <span class="rate-txt">5,0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-details">
+                            <div class="car-details">
+                                <img src="/images/car-small.svg" alt="" class="car-icon">
+                                <span class="car-name">Lada Granta</span>
+                            </div>
+                            <div class="car-services">
+                                <img src="/images/smoke.svg" alt="" class="service-icons">
+                                <img src="/images/wifi.svg" alt="" class="service-icons">
+                                <img src="/images/condicioner.svg" alt="" class="service-icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <span class="price">1 393₽</span>
+                        <span class="place">1 место</span>
+                        <a href="/posts-result" class="select-link">Выбрать</a>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-dates-container">
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">09:45</span>
+                            </div>
+                            <span class="post-address">Ставрополь, автовокзал</span>
+                        </div>
+                        <div class="post-info mid-post-date">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">15:10</span>
+                            </div>
+                            <span class="post-address">Ростов-на-Дону, автовокзал</span>
+                        </div>
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">5ч-10м</span>
+                            </div>
+                            <span class="post-time">Время в пути</span>
+                        </div>
+                    </div>
+                    <div class="post-details">
+                        <div class="user-info-container">
+                            <img src="/images/user-image.png" alt="" class="user-image">
+                            <div class="user-info">
+                                <span class="user-name">Евгений</span>
+                                <div class="user-rate">
+                                    <img src="/images/rate-star.svg" alt="" class="rate-star">
+                                    <span class="rate-txt">5,0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-details">
+                            <div class="car-details">
+                                <img src="/images/car-small.svg" alt="" class="car-icon">
+                                <span class="car-name">Lada Granta</span>
+                            </div>
+                            <div class="car-services">
+                                <img src="/images/smoke.svg" alt="" class="service-icons">
+                                <img src="/images/wifi.svg" alt="" class="service-icons">
+                                <img src="/images/condicioner.svg" alt="" class="service-icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <span class="price">1 393₽</span>
+                        <span class="place">1 место</span>
+                        <a href="/posts-result" class="select-link">Выбрать</a>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-dates-container">
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">09:45</span>
+                            </div>
+                            <span class="post-address">Ставрополь, автовокзал</span>
+                        </div>
+                        <div class="post-info mid-post-date">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">15:10</span>
+                            </div>
+                            <span class="post-address">Ростов-на-Дону, автовокзал</span>
+                        </div>
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">5ч-10м</span>
+                            </div>
+                            <span class="post-time">Время в пути</span>
+                        </div>
+                    </div>
+                    <div class="post-details">
+                        <div class="user-info-container">
+                            <img src="/images/user-image.png" alt="" class="user-image">
+                            <div class="user-info">
+                                <span class="user-name">Евгений</span>
+                                <div class="user-rate">
+                                    <img src="/images/rate-star.svg" alt="" class="rate-star">
+                                    <span class="rate-txt">5,0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-details">
+                            <div class="car-details">
+                                <img src="/images/car-small.svg" alt="" class="car-icon">
+                                <span class="car-name">Lada Granta</span>
+                            </div>
+                            <div class="car-services">
+                                <img src="/images/smoke.svg" alt="" class="service-icons">
+                                <img src="/images/wifi.svg" alt="" class="service-icons">
+                                <img src="/images/condicioner.svg" alt="" class="service-icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <span class="price">1 393₽</span>
+                        <span class="place">1 место</span>
+                        <a href="/posts-result" class="select-link">Выбрать</a>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-dates-container">
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">09:45</span>
+                            </div>
+                            <span class="post-address">Ставрополь, автовокзал</span>
+                        </div>
+                        <div class="post-info mid-post-date">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">15:10</span>
+                            </div>
+                            <span class="post-address">Ростов-на-Дону, автовокзал</span>
+                        </div>
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">5ч-10м</span>
+                            </div>
+                            <span class="post-time">Время в пути</span>
+                        </div>
+                    </div>
+                    <div class="post-details">
+                        <div class="user-info-container">
+                            <img src="/images/user-image.png" alt="" class="user-image">
+                            <div class="user-info">
+                                <span class="user-name">Евгений</span>
+                                <div class="user-rate">
+                                    <img src="/images/rate-star.svg" alt="" class="rate-star">
+                                    <span class="rate-txt">5,0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-details">
+                            <div class="car-details">
+                                <img src="/images/car-small.svg" alt="" class="car-icon">
+                                <span class="car-name">Lada Granta</span>
+                            </div>
+                            <div class="car-services">
+                                <img src="/images/smoke.svg" alt="" class="service-icons">
+                                <img src="/images/wifi.svg" alt="" class="service-icons">
+                                <img src="/images/condicioner.svg" alt="" class="service-icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <span class="price">1 393₽</span>
+                        <span class="place">1 место</span>
+                        <a href="/posts-result" class="select-link">Выбрать</a>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-dates-container">
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">09:45</span>
+                            </div>
+                            <span class="post-address">Ставрополь, автовокзал</span>
+                        </div>
+                        <div class="post-info mid-post-date">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">15:10</span>
+                            </div>
+                            <span class="post-address">Ростов-на-Дону, автовокзал</span>
+                        </div>
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">5ч-10м</span>
+                            </div>
+                            <span class="post-time">Время в пути</span>
+                        </div>
+                    </div>
+                    <div class="post-details">
+                        <div class="user-info-container">
+                            <img src="/images/user-image.png" alt="" class="user-image">
+                            <div class="user-info">
+                                <span class="user-name">Евгений</span>
+                                <div class="user-rate">
+                                    <img src="/images/rate-star.svg" alt="" class="rate-star">
+                                    <span class="rate-txt">5,0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-details">
+                            <div class="car-details">
+                                <img src="/images/car-small.svg" alt="" class="car-icon">
+                                <span class="car-name">Lada Granta</span>
+                            </div>
+                            <div class="car-services">
+                                <img src="/images/smoke.svg" alt="" class="service-icons">
+                                <img src="/images/wifi.svg" alt="" class="service-icons">
+                                <img src="/images/condicioner.svg" alt="" class="service-icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <span class="price">1 393₽</span>
+                        <span class="place">1 место</span>
+                        <a href="/posts-result" class="select-link">Выбрать</a>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-dates-container">
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">09:45</span>
+                            </div>
+                            <span class="post-address">Ставрополь, автовокзал</span>
+                        </div>
+                        <div class="post-info mid-post-date">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">15:10</span>
+                            </div>
+                            <span class="post-address">Ростов-на-Дону, автовокзал</span>
+                        </div>
+                        <div class="post-info">
+                            <div class="post-date-container">
+                                <span class="post-date-txt">5ч-10м</span>
+                            </div>
+                            <span class="post-time">Время в пути</span>
+                        </div>
+                    </div>
+                    <div class="post-details">
+                        <div class="user-info-container">
+                            <img src="/images/user-image.png" alt="" class="user-image">
+                            <div class="user-info">
+                                <span class="user-name">Евгений</span>
+                                <div class="user-rate">
+                                    <img src="/images/rate-star.svg" alt="" class="rate-star">
+                                    <span class="rate-txt">5,0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-details">
+                            <div class="car-details">
+                                <img src="/images/car-small.svg" alt="" class="car-icon">
+                                <span class="car-name">Lada Granta</span>
+                            </div>
+                            <div class="car-services">
+                                <img src="/images/smoke.svg" alt="" class="service-icons">
+                                <img src="/images/wifi.svg" alt="" class="service-icons">
+                                <img src="/images/condicioner.svg" alt="" class="service-icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-container">
+                        <span class="price">1 393₽</span>
+                        <span class="place">1 место</span>
+                        <a href="/posts-result" class="select-link">Выбрать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

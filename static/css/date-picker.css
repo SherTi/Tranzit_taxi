@@ -1,0 +1,140 @@
+@import url('/fonts/SFPro/stylesheet.css');
+@import url('/fonts/inter/inter.css');
+.date-picker {
+    border-radius: 32px;
+}
+
+.table-td {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.number-td {
+    font-family: "SF Pro Display", sans-serif;
+    transition: all .2s;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.current {
+    background: #3083FF;
+    color: #FFFFFF;
+}
+
+.number-td:hover {
+    border: 1px solid #3083FF;
+}
+
+.table-td.disabled {
+    color: rgba(0, 0, 0, 0.25);
+    cursor: default;
+}
+
+.table-td.disabled:hover {
+    border: 1px solid transparent;
+}
+
+.date-picker-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.date-picker-container * {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.date-picker {
+    position: absolute;
+    background: #ffffff;
+    padding: 32px 18px;
+    border-radius: 32px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, .3);
+    cursor: default;
+    left: -10px;
+    top: calc(100% + 10px);
+    z-index: 1;
+}
+
+.value-text {
+    display: block;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.dates-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 12px;
+}
+
+.picker-icon {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.month-container,
+.year-container {
+    display: flex;
+    align-items: center;
+}
+
+.picker-year-txt {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 33px;
+    color: #3083FF;
+    padding: 0 20px;
+}
+
+.picker-month-txt {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    padding: 0 20px;
+}
+/*history-of-travel-page*/
+.p-container{
+    margin: 84px 0 600px 0;
+    padding: 0 345px;
+    height: 100vh;
+}
+.combined-title-card{
+    display: flex;
+    flex-direction: column;
+}
+.combined-title-text{
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.0425em;
+    color: #000000;
+}
+/*history-of-travel-page*/

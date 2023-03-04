@@ -1,0 +1,66 @@
+<div class="header{{#if banner}} header_main{{/if}}">
+    <header>
+        <a href="/" class="logo-link">
+            <div class="logo-container">
+                <img src="/images/logo-transit.svg" alt="Transit Logo">
+            </div>
+        </a>
+        <div class="right-container">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="/#how-it-works" class="nav-link">Как это работает</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/#popular-routes" class="nav-link">Популярные маршруты</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/#contacts" class="nav-link">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/post-a-trip" class="nav-link">Опубликовать поездку</a>
+                </li>
+            </ul>
+            <div class="profile-container">
+                <button class="profile-btn">Войти</button>
+            </div>
+        </div>
+    </header>
+    {{#if banner}}{{> banner }}{{/if}}
+</div>
+<div class="login-modal closed">
+    <div class="login-container">
+        <div class="modal-logo-container">
+            <img src="/images/logo-transit.svg" alt="" class="modal-logo">
+        </div>
+        <span class="modal-info">Войдите с помощью</span>
+        <div class="switcher-container">
+            <div class="switcher-bg"></div>
+            <div class="switcher-thumb" id="mail-thumb">
+                <span class="switcher-txt">Почта</span>
+            </div>
+            <div class="switcher-thumb" id="phone-thumb">
+                <span class="switcher-txt">Телефон</span>
+            </div>
+        </div>
+        <form method="POST" class="login-form">
+            <div class="input-container">
+                <label>
+                    <input type="text" class="form-input" name="ml" placeholder="Введите почту">
+                </label>
+            </div>
+            <div class="input-container password-container">
+                <label>
+                    <input type="text" class="form-input" name="ps" placeholder="Введите пароль" id="ps-input">
+                </label>
+                <button class="ps-hide-btn">
+                    <img src="/images/hidden.svg" alt="" class="ps-hide-icon">
+                </button>
+            </div>
+            <div class="forget-container">
+                <a href="/forget" class="forget-link">Не помню</a>
+            </div>
+            <button type="submit" class="submit-btn">Войти</button>
+            <a href="/register" class="register-link">Регистрация</a>
+        </form>
+    </div>
+</div>

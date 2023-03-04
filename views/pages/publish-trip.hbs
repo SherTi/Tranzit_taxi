@@ -1,0 +1,41 @@
+<div class="register-container">
+    <h1 class="page-title">Опубликовать поездку</h1>
+    <div class="page-content">
+        <div class="page-content-header">
+            <h2 class="register-content-heading">Введите водительские данные</h2>
+            <span class="stage-txt">Шаг 1/2</span>
+        </div>
+        <div class="page-content-body">
+            <form method="POST" class="register-form" action="/post-a-trip-next">
+
+                <div class="des-text-block"><span class="des-text">Страна выдачи ВУ</span></div>
+                <div class="select-input-container">
+                    <select name="gender" class="register-input select-input">
+                        <option value="#"  selected>Россия</option>
+                        <option value="male">Белоруссия</option>
+                        <option value="female">Узбекистан</option>
+                        <option value="female">Казахстан</option>
+                    </select>
+                </div>
+                <div class="input-half">
+                    <div class="i-h-block">
+                        <div class="des-text-block"><span class="des-text">Серия ВУ</span></div>
+                        <input type="text" class="register-input width-200 mar-r-45" placeholder="Серия" name="name">
+                    </div>
+                    <div class="i-h-block">
+                        <div class="des-text-block"><span class="des-text">Номер ВУ</span></div>
+                        <input type="text" class="register-input" placeholder="Номер" name="surname">
+                    </div>
+                </div>
+                <div class="des-text-block"><span class="des-text">Дата выдачи ВУ</span></div>
+                <div class="issue-date-container mar-b-20"></div>
+                <div class="des-text-block"><span class="des-text">Номер ВУ</span></div>
+                <div class="valid-container mar-b-20"></div>
+                <div class="des-text-block"><span class="des-text">Номер ВУ</span></div>
+                <input type="text" class="register-input" placeholder="Серия и номер" name="email">
+                <button class="form-submit-btn" type="submit">Далее</button>
+            </form>
+            <a href="/" class="cancel-link">Назад</a>
+        </div>
+    </div>
+</div>

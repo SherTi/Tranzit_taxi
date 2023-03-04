@@ -1,0 +1,19 @@
+<div class="register-container">
+    <h1 class="page-title">Регистрация</h1>
+    <div class="page-content">
+        <div class="page-content-header">
+            <h2 class="register-content-heading">Потверждение эл.почты</h2>
+            <span class="stage-txt">Шаг 2/3</span>
+        </div>
+        <div class="form-text-block">
+            <p class="form-text-submit">Мы отправили письмо на вашу почту <span>tranzit@mail.ru</span> с кодом потверждения пожалуйста введите код чтобы потвердит вашу электронную почту</p>
+        </div>
+        <div class="page-content-body">
+            <form method="POST" class="register-form" action="/submit-email">
+                <input type="number" class="register-input submit-input" placeholder="Код потверждения">
+                <button class="form-submit-btn" type="submit">Продолжить</button>
+            </form>
+            <a href="/register" class="cancel-link">Назад</a>
+        </div>
+    </div>
+</div>
